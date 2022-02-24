@@ -7,16 +7,16 @@ export default function About() {
         <div className={styles.contentWrapper}>
             <div className={styles.expoWrapper}>
                 <p className={styles.exposition}>
-                I'm a Full-Stack developer specializing in building Web3 applications and getting you connected to the metaverse.
+                I&apos;m a Full-Stack developer specializing in building Web3 applications and getting you connected to the metaverse.
                 <br />
                 <br />
-                Whether you need to set up your next NFT drop or want to forray into the world of DeFi, I've got you covered.
+                Whether you need to set up your next NFT drop or want to forray into the world of DeFi, I&apos;ve got you covered.
                 <br />
                 <br />
-                I've worked on teams both big and small, and can adapt to any work environment.
+                I&apos;ve worked on teams both big and small, and can adapt to any work environment.
                 <br />
                 <br />
-                Here are a few technologies I've been working with recently:
+                Here are a few technologies I&apos;ve been working with recently:
                 <br />
                 <br />
                 </p>

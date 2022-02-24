@@ -9,9 +9,9 @@ export default function Hero() {
             <h1 className={styles.name}>Alex Cucos.</h1>
             <h2>I Build Things for the Web.</h2>
             <p className={styles.desc}>
-                I'm a full-stack software engineer 
+                I&apos;m a full-stack software engineer 
                 specializing in connecting you to the metaverse.
-                Currently, I'm focused on building accessible web3 applications
+                Currently, I&apos;m focused on building accessible web3 applications
                 to aid in the mass adoption of blockchain tech.
             </p>
         </div>
