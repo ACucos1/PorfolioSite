@@ -1,0 +1,148 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0 0 15px 15px #1d1d1d; */
+    min-height: 100px;
+}
+
+.logo{
+    /* background-color: rgb(221, 98, 98); */
+    /* width: 40px;
+    height: 40px; */
+    /* margin-left: 3rem; */
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    min-width: 400px;
+    margin: 0 1rem;
+}
+
+.navItems .resume {
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 920px){
+    .navbar{
+        /* display: none; */
+    }
+}
+
+
+@media screen and (max-width: 430px){
+    .navbar {
+        position: fixed;
+        width: 100vw;
+        z-index: 9999;
+        background-color: #270047;
+        transition: top .2s ease;
+        box-shadow: 0 0 5px 5px #1600293a;
+    }
+
+    .hidden {
+        transform: translateX(-600px);
+    }
+
+    .menuBtn {
+        position: fixed;
+        right: 0;
+        margin-right: 20px;
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        /* border: 1px solid white; */
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        width: 40px;
+        height: 4px;
+        /* border-radius: 25px; */
+        background-color: #cacaca;
+        transition: all .2s ease-in-out;
+    }
+
+    .burger::before,
+    .burger::after{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        transition: all .2s ease-in-out;
+        /* border-radius: 25px; */
+        background-color: #cacaca;
+        
+    }
+
+    .menuBtn .burger::before{
+        transform: translateY(-16px);
+    }
+
+    .menuBtn .burger::after {
+        transform: translateY(16px);
+    }
+
+    .menuBtn.open .burger {
+        
+        background-color: transparent;
+    }
+
+    
+
+    .menuBtn.open .burger::before {
+        transform: rotate(45deg);
+    }
+
+    .menuBtn.open .burger::after {
+        transform: rotate(-45deg);
+    }
+
+    
+
+    .navItems{
+        z-index: 9999;
+        position: fixed;
+        top: 100px;
+        height: calc(100vh - 100px);
+        width: 60%;
+        background-color: #746288e1;
+        margin: 0;
+        transition: transform .25s ease;
+    }
+
+    .navItems button {
+        display: none;
+    }
+
+    .navList {
+        flex-direction: column;
+        /* background-color: red; */
+        margin: 0;
+        
+        height: 50%;
+        min-width: unset;
+    }
+
+    .navList li {
+        margin-top: 1rem;
+    }
+}

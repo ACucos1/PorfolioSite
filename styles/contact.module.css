@@ -1,0 +1,19 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 30px;
+}
+
+.contact button {
+    height: 50px;
+    width: 100px;
+    margin-top: 2rem;
+    font-weight: 900;
+    border-width: 2px;
+}

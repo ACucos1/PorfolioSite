@@ -1,0 +1,30 @@
+.hero {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.heroWrapper {
+    margin-bottom: 7rem;
+}
+
+.name {
+    color: #dacaca;
+}
+
+.desc {
+    width: 550px;
+}
+
+
+@media screen and (max-width: 430px){
+    .desc{
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .hero{
+        max-width: 800px;
+    }
+}
