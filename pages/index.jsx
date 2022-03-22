@@ -80,7 +80,7 @@ export default function Home() {
 
     let projectTl = gsap.timeline({
       scrollTrigger : {
-        trigger: "#showcase",
+        trigger: "#ShowCase",
         
       }
     })
@@ -103,19 +103,19 @@ export default function Home() {
 
     let contactTl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#contact",
+        trigger: "#Contact",
       }
     })
-    contactTl.addLabel("loadContact").from("#contact h5", {
+    contactTl.addLabel("loadContact").from("#Contact h5", {
       opacity: 0,
       x: -300,
     })
-    .from("#contact h1, #contact p", {
+    .from("#Contact h1, #Contact p", {
       opacity: 0,
       y: 50,
       stagger: 0.1
     },)
-    .from("#contact button", {
+    .from("#Contact button", {
       opacity: 0,
       scale: 0.5,
     },)
