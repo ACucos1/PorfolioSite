@@ -9,13 +9,21 @@ export default function Employers() {
         name: 'Ceridian',
         title: 'Full-Stack Dev',
         date: 'Sept 2020 - Sept 2021',
-        description: ['Developed algorithms and implemented new data models to modify and enhanced performance of the Dayforce payroll module.', 'x', 'x'],
+        description: [
+            'Developed algorithms and implemented new data models to modify and enhance performance of the Dayforce payroll module.',
+            'Worked with .NET MVC 5, C#, SQL, SSMS, DOJO js',
+            'Operated in close collaboration with senior devs, business analysts and database analysts on a daily basis'
+        ],
     },
     {
         name: 'RP4K',
         title: 'Instructor',
         date: 'May 2018 - March 2019',
-        description: ['y', 'y', 'y'],
+        description: [
+            'Taught kids aged 8-18 how to program classic arcade games in a variety of programming lanuages',
+            'Broke down fundamental concepts of math & programming so that even a child could understand them',
+            'Developed a keen eye for debugging after scouring tens of thousands of lines of children\'s code',
+            'Python, Java, Javascript, C++, C#, Visual Basic, Unity'],
     }]
     const infoRef = useRef()
 

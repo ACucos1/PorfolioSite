@@ -30,7 +30,7 @@ body {
 }
 
 body::before {
-  /* content: ""; */
+  content: "";
   position: fixed;
   height: 200vh;
   width: 200vw;

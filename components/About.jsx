@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from '../styles/about.module.css'
+import Image from 'next/image'
+import Me from '../public/images/me.jpg'
 export default function About() {
   return (
     <div className={styles.about + " section container center"} id="about">
@@ -36,7 +38,10 @@ export default function About() {
 
                 
             </div>
-            <img src="" alt="me"/>
+            <div className={styles.imgWrapper}>
+                <Image src={Me} alt="me" width="100%" height="100%" objectFit="contain" layout="responsive"/>
+            </div>
+            
         </div>
         
     </div>

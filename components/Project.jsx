@@ -1,23 +1,19 @@
 import React from 'react'
 import styles from '../styles/project.module.css'
-
-export default function Project({flip}) {
+//title, desc, image, stack
+export default function Project({flip, data}) {
   return (
     <div className={styles.project}>
             <div className={flip ? styles.projectWrapper + " projectRightAnimWrap " + styles.right : styles.projectWrapper + " projectAnimWrap "}>
                 <p className="red">Featured Project</p>
-                <h4>Charisma</h4>
+                <h4>{data.title}</h4>
                 <div className={styles.desc}>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                       Aliquid fuga, ipsum vero beatae id quis error.
-                       Consequuntur omnis, aperiam et ipsam suscipit quis 
-                       reprehenderit sunt veritatis amet dignissimos harum vitae?</p>
+                    <p>
+                        {data.desc}
+                    </p>
                 </div> 
                 <ul className={styles.stack}>
-                    <li>React</li>
-                    <li>Solidity</li>
-                    <li>Truffle</li>
-                    <li>CSS</li>
+                    {data.stack.map((e, idx) => (<li key={idx}>{e}</li>) )}
                 </ul>
             </div>
             <div className={styles.imageWrapper}>

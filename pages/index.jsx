@@ -142,7 +142,7 @@ export default function Home() {
       <footer className="footer">
         Built from scratch with NextJS by <span className="red">Alex Cucos</span> 
         <br />
-        Designed by <span className="red">Brittany Chiang</span>
+        Original design by <span className="red">Brittany Chiang</span>
       </footer>
     </div>
   )

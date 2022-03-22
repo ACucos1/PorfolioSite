@@ -1,5 +1,6 @@
 import React from 'react'
 import Employers from './Employers'
+import styles from '../styles/workexperience.module.css'
 
 export default function WorkExperience() {
   return (

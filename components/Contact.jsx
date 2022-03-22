@@ -3,7 +3,7 @@ import styles from '../styles/contact.module.css'
 
 export default function Contact() {
   return (
-    <div className={styles.contact + " section container center"} id="contact">
+    <div className={styles.contact + " section container center"} id="Contact">
         <h5><span className="red">04.</span>What&apos;s Next?</h5>
         <h1>Contact Me!</h1>
         <p>
