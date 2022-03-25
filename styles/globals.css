@@ -172,6 +172,13 @@ a:hover {
   color: var(--accent-color);
 }
 
+.revred a {
+  color: var(--accent-color);
+}
+
+.revred a:hover {
+  color: var(--off-white);
+}
 
 footer {
   
