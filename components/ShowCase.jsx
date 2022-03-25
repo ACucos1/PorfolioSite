@@ -2,18 +2,19 @@ import React from 'react'
 import Project from './Project'
 import styles from '../styles/showcase.module.css'
 
+
 export default function showCase() {
   let projects = [
     {
       title: "Charisma",
       desc: "ETH Global NFTHack 2022 Winner. A wallet analysis platform which aggregates and analysis user NFT trading activity and assigns a 'Wallet Personality Indicator' similar to the Meyers-Briggs 16 Personalities test.", 
-      image: "url",
+      image: "/images/charisma-preview.png",
       stack: ['React', 'Solidity', 'Truffle', 'CSS']
     },
     {
       title: "Bonkers Stonkers",
       desc: "Developed the website, smart contract, and marketing strategy for a collection of 10,000 NFT degens looking to make their moonshot in the metaverse.", 
-      image: "url",
+      image: "/images/stealth.png",
       stack: ['NextJS', 'Solidity', 'Truffle', 'CSS', 'Python']
     },
   ]
