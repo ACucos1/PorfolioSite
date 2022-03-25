@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from '../styles/contact.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons"
 
 export default function Contact() {
   return (
@@ -10,7 +12,12 @@ export default function Contact() {
             I&apos;m always keen to see how I can contribute to new and exciting projects!
             Drop me a line :)  
         </p>
-        <button className="btn red">Say Hi</button>
+        <a href="mailto:alexcucos1@gmail.com"><button className="btn red">Say Hi</button></a>
+        <div className={styles.socials}>
+          <a href="https://twitter.com/alexcucos3" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa-3x" icon={faTwitter}/></a>
+          <a href="https://github.com/acucos1" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa-3x" icon={faGithub}/></a>
+          <a href="https://linkedin.com/in/alex-cucos" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa-3x" icon={faLinkedin}/></a>
+        </div>
     </div>
   )
 }
