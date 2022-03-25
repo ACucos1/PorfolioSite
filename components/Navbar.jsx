@@ -51,7 +51,7 @@ export default function Navbar() {
                 <li className="nav-item"><span className="red">03.</span><a href="#ShowCase">Work</a></li>
                 <li className="nav-item"><span className="red">04.</span><a href="#Contact">Contact</a></li>
             </ul>
-            <button className={"red btn"}>Resume</button>
+            <a href="./Resume.pdf" download="resume.pdf"><button className={"red btn"}>Resume</button></a>
         </div>
     </div>
   )
