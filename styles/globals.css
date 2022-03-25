@@ -23,6 +23,24 @@
   
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(136, 136, 136, 0.349);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: var(--main-color);
   color: var(--off-white);
