@@ -119,6 +119,19 @@ export default function Home() {
       opacity: 0,
       scale: 0.5,
     },)
+    .from('#twitter', {
+      opacity: 0,
+      y: 30
+    })
+    .from('#github', {
+      opacity: 0,
+      y: 30
+    })
+    .from('#linkedin', {
+      opacity: 0,
+      y: 30
+    })
+
     
   }, [])
 

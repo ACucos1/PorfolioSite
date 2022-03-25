@@ -14,9 +14,9 @@ export default function Contact() {
         </p>
         <a href="mailto:alexcucos1@gmail.com"><button className="btn red">Say Hi</button></a>
         <div className={styles.socials}>
-          <a href="https://twitter.com/alexcucos3" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa-3x" icon={faTwitter}/></a>
-          <a href="https://github.com/acucos1" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa-3x" icon={faGithub}/></a>
-          <a href="https://linkedin.com/in/alex-cucos" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa-3x" icon={faLinkedin}/></a>
+          <a href="https://twitter.com/alexcucos3" target="_blank" rel="noreferrer"><FontAwesomeIcon  id="twitter" className={`${styles.socialLink} fa-3x`} icon={faTwitter}/></a>
+          <a href="https://github.com/acucos1" target="_blank" rel="noreferrer"><FontAwesomeIcon id="github" className={`${styles.socialLink} fa-3x`} icon={faGithub}/></a>
+          <a href="https://linkedin.com/in/alex-cucos" target="_blank" rel="noreferrer"><FontAwesomeIcon id="linkedin" className={`${styles.socialLink} fa-3x`} icon={faLinkedin}/></a>
         </div>
     </div>
   )
