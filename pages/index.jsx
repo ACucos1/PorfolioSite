@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
@@ -14,14 +14,15 @@ import showCase from '../components/ShowCase'
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
-
-  
-  
+  const el =  useRef()
+  const q = gsap.utils.selector(el)
+  const heroTimeline = useRef()
+  const aboutTl = useRef()
+  const employersTl = useRef()
+  const projectTl = useRef()
+  const contactTl = useRef()
   //Animations
   useEffect(() => {
-    const fadeInRight = {opacity: 0, x: -300}
-    const fadeInUp = {opacity: 0, y: 100}
-    
     
     const headers = gsap.utils.toArray("h3")
     headers.forEach((header, i) => {
@@ -37,9 +38,8 @@ export default function Home() {
         label: "header"
       })
     })
-    let heroTimeline = gsap.timeline() 
-
-    heroTimeline.from("#hero p.red", {
+    heroTimeline.current = gsap.timeline()
+    .from("#hero p.red", {
       opacity: 0,
       x: -50,
       duration: .7,
@@ -53,13 +53,12 @@ export default function Home() {
       y: 10
     }, "hero+=.1")
 
-    let aboutTl = gsap.timeline({
+    aboutTl.current = gsap.timeline({
       scrollTrigger: {
       trigger: "#about h3",
       
     }}
-    )
-    aboutTl.addLabel("aboutLoad").from("#about div div", {
+    ).addLabel("aboutLoad").from("#about div div", {
       opacity: 0,
       y: 100
     }).from("#about img", {
@@ -67,24 +66,24 @@ export default function Home() {
       y: 100
     }, "aboutLoad+=.2")
 
-    let employersTl = gsap.timeline({
+    employersTl.current = gsap.timeline({
       scrollTrigger: {
       trigger: "#employers",
       }
     })
-    employersTl.addLabel("employersLoad").from("#employers div", {
+    .addLabel("employersLoad").from("#employers div", {
       opacity: 0,
       y: 100,
       stagger: .2
     })
 
-    let projectTl = gsap.timeline({
+    projectTl.current = gsap.timeline({
       scrollTrigger : {
         trigger: "#ShowCase",
         
       }
     })
-    projectTl.addLabel("projectLoad").from(".projectRightAnimWrap", {
+    .addLabel("projectLoad").from(".projectRightAnimWrap", {
       opacity: 0,
       x: 300,
     })
@@ -101,12 +100,12 @@ export default function Home() {
       x: 300,
     }, "projectLoad+=.5")
 
-    let contactTl = gsap.timeline({
+    contactTl.current = gsap.timeline({
       scrollTrigger: {
         trigger: "#Contact",
       }
     })
-    contactTl.addLabel("loadContact").from("#Contact h5", {
+    .addLabel("loadContact").from("#Contact h5", {
       opacity: 0,
       x: -300,
     })
@@ -131,8 +130,6 @@ export default function Home() {
       opacity: 0,
       y: 30
     })
-
-    
   }, [])
 
   return (

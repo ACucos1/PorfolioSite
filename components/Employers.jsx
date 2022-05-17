@@ -46,8 +46,6 @@ export default function Employers() {
         } 
     }
 
-
-    
     return (
         <div className={styles.employers + " container center"} id="employers">
             <div className={styles.tabList}>
