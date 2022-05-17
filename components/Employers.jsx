@@ -6,6 +6,14 @@ export default function Employers() {
 
     const jobData = [
     {
+        name: 'ReelData.ai',
+        title: 'Full-Stack Dev',
+        date: 'May 2022 - Aug 2022',
+        description: [
+            'Implemented from designs the UI for Reeldata\'s newest product, ReelBiomass.',
+        ],
+    },
+    {
         name: 'Ceridian',
         title: 'Full-Stack Dev',
         date: 'Sept 2020 - Sept 2021',
@@ -43,8 +51,9 @@ export default function Employers() {
     return (
         <div className={styles.employers + " container center"} id="employers">
             <div className={styles.tabList}>
-                <button className={tab == 0 ? "btn red selected" : "btn red"} onClick={() => handleTabChange(0)}>Ceridian</button>
-                <button className={tab == 1 ? "btn red selected" : "btn red"} onClick={() => handleTabChange(1)}>RP4K</button>
+                {jobData.map((job, idx) => (
+                    <button key={idx} className={tab === idx ? 'btn red selected' : 'btn red'} onClick={() => handleTabChange(idx)}>{job.name}</button>
+                ))}
             </div>
             
             <div className={styles.information} ref={infoRef}>
