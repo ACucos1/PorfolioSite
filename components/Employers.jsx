@@ -3,6 +3,7 @@ import styles from '../styles/employers.module.css'
 
 export default function Employers() {
     const [tab, setTab] = useState(0)
+    const [selectedBtn, setSelectedBtn] = useState(0);
 
     const jobData = [
     {
@@ -38,11 +39,12 @@ export default function Employers() {
     const handleTabChange = (tabNum) => {
         if(tabNum !== tab){
             infoRef.current.className = `${styles.information} ${styles.exit}`
-
+            setSelectedBtn(tabNum)
             setTimeout(() => {
                 infoRef.current.className = `${styles.information} ${styles.enter}`
                 setTab(tabNum)
             }, 200)
+            
         } 
     }
 
@@ -50,7 +52,7 @@ export default function Employers() {
         <div className={styles.employers + " container center"} id="employers">
             <div className={styles.tabList}>
                 {jobData.map((job, idx) => (
-                    <button key={idx} className={tab === idx ? 'btn red selected' : 'btn red'} onClick={() => handleTabChange(idx)}>{job.name}</button>
+                    <button key={idx} className={selectedBtn === idx ? 'btn red selected' : 'btn red'} onClick={() => handleTabChange(idx)}>{job.name}</button>
                 ))}
             </div>
             
