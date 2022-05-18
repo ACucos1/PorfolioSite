@@ -105,31 +105,31 @@ export default function Home() {
         trigger: "#Contact",
       }
     })
-    .addLabel("loadContact").from("#Contact h5", {
+    .addLabel("loadContact")
+    .from("#Contact h5", {
       opacity: 0,
       x: -300,
     })
     .from("#Contact h1, #Contact p", {
       opacity: 0,
       y: 50,
-      stagger: 0.1
-    },)
+    },"loadContact")
     .from("#Contact button", {
       opacity: 0,
       scale: 0.5,
-    },)
+    }, "loadContact+=.5")
     .from('#twitter', {
       opacity: 0,
       y: 30
-    })
+    }, "loadContact+=0.8")
     .from('#github', {
       opacity: 0,
       y: 30
-    })
+    }, "loadContact+=0.9")
     .from('#linkedin', {
       opacity: 0,
       y: 30
-    })
+    }, "loadContact+=1")
   }, [])
 
   return (
