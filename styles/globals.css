@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --accent-color: #cc4242;
@@ -14,25 +13,24 @@
   --p-color: #959595;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   scroll-behavior: smooth;
-  
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: rgba(136, 136, 136, 0.349);
   border-radius: 25px;
 }
@@ -57,9 +55,12 @@ body::before {
   opacity: 0.15;
   z-index: -1;
   /* pointer-events: none; */
-  background-image: url('/images/noise.png');
+  background-image: url("/images/noise.png");
   animation: moveStatic 1.5s steps(6) infinite;
-  
+}
+
+section {
+  padding: 2rem 0;
 }
 
 h1 {
@@ -72,7 +73,7 @@ h2 {
   color: var(--p-color);
 }
 
-h3{
+h3 {
   display: flex;
   align-items: center;
   font-size: 30px;
@@ -80,7 +81,7 @@ h3{
 }
 
 h3::after {
-  content:"";
+  content: "";
   width: 200px;
   height: 1px;
   background-color: var(--p-color);
@@ -88,7 +89,6 @@ h3::after {
   position: relative;
   margin-left: 15px;
   top: 2px;
-  
 }
 
 h4 {
@@ -98,15 +98,15 @@ h4 {
 h5 {
   font-size: 25px;
 }
-ul{
+ul {
   list-style: none;
 }
 
-p, li{
+p,
+li {
   color: var(--p-color);
   font-size: 18px;
 }
-
 
 .bullet::before {
   content: "\2022";
@@ -114,6 +114,7 @@ p, li{
   font-weight: bold;
   display: inline-block;
   width: 1em;
+  margin-left: -1em;
 }
 .section {
   height: calc(100vh - 100px);
@@ -121,7 +122,7 @@ p, li{
   z-index: 2;
 }
 
-.container{
+.container {
   max-width: 900px;
   /* margin: auto; */
 }
@@ -133,12 +134,12 @@ p, li{
 .red {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  
 }
 
-
-.red, .nav-item, a {
-  font-family: 'Roboto Mono', monospace;
+.red,
+.nav-item,
+a {
+  font-family: "Roboto Mono", monospace;
 }
 
 .nav-item {
@@ -151,21 +152,20 @@ p, li{
   padding: 0 10px;
   border: 1px solid;
   border-radius: 5px;
-  transition: background-color .2s ease;
-  
+  transition: background-color 0.2s ease;
 }
 .btn:hover {
   background-color: var(--accent-color-faded);
 }
 
-.selected{
+.selected {
   background-color: var(--accent-color-faded);
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--off-white);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 a:hover {
@@ -181,7 +181,6 @@ a:hover {
 }
 
 footer {
-  
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -200,14 +199,13 @@ footer::before {
   border-top: 1px solid var(--accent-color);
 }
 
-
-@media screen and (max-width: 920px){
+@media screen and (max-width: 920px) {
   .section {
     height: 100vh;
     min-height: 800px;
   }
 
-  .container{
+  .container {
     max-width: 700px;
   }
 
@@ -217,8 +215,8 @@ footer::before {
   }
 }
 
-@media screen and (max-width: 430px){
-  body{
+@media screen and (max-width: 430px) {
+  body {
     overflow-x: hidden;
   }
 
@@ -231,20 +229,33 @@ footer::before {
     max-width: 350px;
   }
 
-  h3::after{
-    content: none;    
+  h3::after {
+    content: none;
   }
 
-  footer::before{
+  footer::before {
     width: 300px;
   }
 }
 
 @keyframes moveStatic {
-  0%, 100% {transform: translate(0,0);}
-  10% {transform: translate(-5%,-10%);}
-  30% {transform: translate(3%,-15%);}
-  50% {transform: translate(12%,9%);}
-  70% {transform: translate(9%,4%);}
-  90% {transform: translate(-1%,7%);}
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  30% {
+    transform: translate(3%, -15%);
+  }
+  50% {
+    transform: translate(12%, 9%);
+  }
+  70% {
+    transform: translate(9%, 4%);
+  }
+  90% {
+    transform: translate(-1%, 7%);
+  }
 }
