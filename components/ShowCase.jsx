@@ -30,10 +30,6 @@ export default function showCase() {
       {projects.map((project, idx) => (
         <Project key={idx} flip={idx % 2 == 0 ? true : false} data={project} />
       ))}
-
-      {/* <Project flip={true}/>
-        <Project />
-        <Project flip={true}/> */}
     </section>
   );
 }

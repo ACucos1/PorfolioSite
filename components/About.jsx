@@ -19,7 +19,7 @@ export default function About() {
             the world of DeFi, I&apos;ve got you covered.
             <br />
             <br />
-            I&apos;ve worked on teams both big and small, and can adapt to any
+            I&apos;ve worked on teams big and small, remote &amp; in-person, and can adapt to any
             work environment.
             <br />
             <br />
@@ -30,14 +30,14 @@ export default function About() {
 
           <div className={styles.listWrapper}>
             <ul>
-              <li className='bullet'>Javascript</li>
+              <li className='bullet'>Typescript</li>
               <li className='bullet'>NEXTjs</li>
               <li className='bullet'>React</li>
             </ul>
             <ul>
-              <li className='bullet'>C/C#/C++</li>
+              <li className='bullet'>C/C++</li>
               <li className='bullet'>SQL/MongoDB</li>
-              <li className='bullet'>Java (+JavaFX)</li>
+              <li className='bullet'>Java (+Springboot)</li>
             </ul>
           </div>
         </div>

@@ -11,9 +11,9 @@ export default function Employers() {
       title: "Full-Stack Dev",
       date: "May 2022 - Sept 2022",
       description: [
-        "Designed and implemented react components for ReelData's newest product, ReelBiomass",
-        "Implemented new CRUD endpoints and MQTT handlers to hydrate the front-end",
-        "",
+        "Delivered clean, test-driven and maintainable code for ReelData's newest product, ReelBiomass.",
+        "Implemented new features from a spec, from back-end integration to implementing new pages/components on the front-end",
+        "Typescript, React, Java, Springboot, PostgreSQL, GraphQL",
       ],
     },
     {
@@ -23,7 +23,7 @@ export default function Employers() {
       description: [
         "Developed algorithms and implemented new data models to modify and enhance performance of the Dayforce payroll module.",
         "Maintained business logic to stay up to date with the latest standards & best practices",
-        "Worked with .NET MVC 5, C#, SQL, SSMS, DOJO js",
+        ".NET MVC 5, C#, SQL, SSMS, DOJO js",
         "Operated in close collaboration with senior devs, business analysts and database analysts on a daily basis",
       ],
     },
