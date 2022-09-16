@@ -45,7 +45,7 @@ body {
   overflow-x: hidden;
 }
 
-body::before {
+.App::before {
   content: "";
   position: fixed;
   height: 200vh;
