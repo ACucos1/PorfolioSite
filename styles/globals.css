@@ -55,8 +55,8 @@ body {
   opacity: 0.15;
   z-index: -1;
   /* pointer-events: none; */
-  background-image: url("/images/noise.png");
-  animation: moveStatic 1.5s steps(6) infinite;
+  /* background-image: url("/images/noise.png");
+  animation: moveStatic 1.5s steps(6) infinite; */
 }
 
 section {
