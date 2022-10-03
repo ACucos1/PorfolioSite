@@ -6,17 +6,17 @@ export default function showCase() {
   let projects = [
     {
       title: "Charisma",
-      desc: "ETH Global NFTHack 2022 Winner. A wallet analysis platform which aggregates and analysis user NFT trading activity and assigns a 'Wallet Personality Indicator' similar to the Meyers-Briggs 16 Personalities test.",
+      desc: "ETH Global NFTHack 2022 Winner. A wallet analysis platform which aggregates and analyzes user NFT trading activity and assigns a 'Wallet Personality Indicator' similar to the Meyers-Briggs 16 Personalities test.",
       image: "/images/charisma screenshot.png",
       link: "https://charismasocial.xyz",
-      stack: ["React", "Solidity", "Truffle", "CSS"],
+      stack: ["React", "Solidity", "Truffle", "NextJS"],
     },
     {
-      title: "Bonkers Stonkers",
-      desc: "Developed the website, smart contract, and marketing strategy for a collection of 10,000 NFT degens looking to make their moonshot in the metaverse.",
-      image: "/images/stealth.png",
-      link: "",
-      stack: ["NextJS", "Solidity", "Truffle", "CSS", "Python"],
+      title: "3D NFT Visualizer",
+      desc: "A wallet explorer which visualizes a user's NFTs each in an interactive 3D Mini-environment.",
+      image: "/images/3dnftvisualizer.png",
+      link: "https://3-d-nf-t-visualizer.vercel.app/",
+      stack: ["Vite", "React", "ThreeJS", "Alchemy SDK"],
     },
   ];
 
