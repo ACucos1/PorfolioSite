@@ -6,7 +6,7 @@ export default function Hero() {
     <div className={styles.hero + " section"} id='hero'>
       <div className={styles.heroWrapper + " container center"}>
         <p className='red'>Hey! I&apos;m</p>
-        <h1 className={styles.name}>Alex Cucos.</h1>
+        <h1 className={styles.name}>Alex.</h1>
         <h2>I Build Things for the Web.</h2>
         <p className={styles.desc}>
           I&apos;m a full-stack software engineer specializing in connecting you
