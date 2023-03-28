@@ -11,35 +11,24 @@ export default function About() {
       <div className={styles.contentWrapper}>
         <div className={styles.expoWrapper}>
           <p className={styles.exposition}>
-            I&apos;m a Full-Stack developer specializing in building Web3
-            applications and getting you connected to the metaverse.
+            Ever since I created my first Minecraft plugin and figured out how
+            to host my own server back in 2012, working with technology has been
+            a daily part of my life. A career in technology is a natural
+            extension of who I am at heart, and I count myself among the lucky
+            few who get to do what they truly love for a living.
             <br />
             <br />
-            Whether you need to set up your next NFT drop or want to forray into
-            the world of DeFi, I&apos;ve got you covered.
+            As I wrap up my degree, I&apos;ve been working at{" "}
+            <a href='https://reeldata.ai' target='_blank' rel='noreferrer'>
+              Reeldata.Ai
+            </a>
+            , fulfilling every young person&apos;s dream of working on something
+            truly impactful.
             <br />
             <br />
-            I&apos;ve worked on teams big and small, remote &amp; in-person, and can adapt to any
-            work environment.
-            <br />
-            <br />
-            Here are a few technologies I&apos;ve been working with recently:
             <br />
             <br />
           </p>
-
-          <div className={styles.listWrapper}>
-            <ul>
-              <li className='bullet'>Typescript</li>
-              <li className='bullet'>NEXTjs</li>
-              <li className='bullet'>React</li>
-            </ul>
-            <ul>
-              <li className='bullet'>C/C++</li>
-              <li className='bullet'>SQL/MongoDB</li>
-              <li className='bullet'>Java (+Springboot)</li>
-            </ul>
-          </div>
         </div>
         <div className={styles.imgWrapper}>
           <Image

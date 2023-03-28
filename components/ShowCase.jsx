@@ -5,6 +5,13 @@ import styles from "../styles/showcase.module.css";
 export default function showCase() {
   let projects = [
     {
+      title: "Point Cloud Creative",
+      desc: "Point Cloud Creative is a digital agency specializing in Augmented Reality. Working closely with the founder, I designed & implemented the website and hooked it up to Sanity CMS, offering complete control over the content served on the website",
+      image: "/images/pcc.png",
+      link: "",
+      stack: ["NextJS", "Sanity CMS", "GSAP"],
+    },
+    {
       title: "Charisma",
       desc: "ETH Global NFTHack 2022 Winner. A wallet analysis platform which aggregates and analyzes user NFT trading activity and assigns a 'Wallet Personality Indicator' similar to the Meyers-Briggs 16 Personalities test.",
       image: "/images/charisma screenshot.png",
